@@ -1,4 +1,5 @@
 import "./searchItem.css";
+import { Link } from "react-router-dom";
 
 const SearchItem = () => {
   return (
@@ -31,7 +32,9 @@ const SearchItem = () => {
         <div className="siDetailTexts">
           <span className="siPrice">$321</span>
           <span className="siTaxOp">Includes taxes and fees</span>
-          <button className="siCheckButton">See availavility</button>
+          <Link to="/hotels/test">
+            <button className="siCheckButton">See availavility</button>
+          </Link>
         </div>
       </div>
     </div>
